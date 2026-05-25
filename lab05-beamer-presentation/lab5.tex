@@ -1,0 +1,208 @@
+\documentclass[12pt, aspectratio=169]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+
+\usetheme{Madrid}
+
+\definecolor{ogublue}{RGB}{30, 60, 140}
+\definecolor{ogugold}{RGB}{200, 160, 30}
+\definecolor{ogulightblue}{RGB}{220, 230, 250}
+
+\setbeamercolor{palette primary}{bg=ogublue, fg=white}
+\setbeamercolor{palette secondary}{bg=ogublue!80, fg=white}
+\setbeamercolor{palette tertiary}{bg=ogublue!60, fg=white}
+\setbeamercolor{frametitle}{fg=white, bg=ogublue}
+\setbeamercolor{block title}{fg=white, bg=ogublue}
+\setbeamercolor{block body}{fg=black, bg=ogulightblue}
+\setbeamercolor{block title alerted}{fg=white, bg=red!70!black}
+\setbeamercolor{block body alerted}{fg=black, bg=red!10}
+\setbeamercolor{itemize item}{fg=ogublue}
+\setbeamercolor{itemize subitem}{fg=ogugold}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{--}
+
+\title[ФМФ ОГУ]{\textbf{История Физико-математического факультета ОГУ}}
+\subtitle{Орловский государственный университет им.\,И.\,С.\,Тургенева}
+\author[Яшин К.\,А.]{Яшин К.\,А.}
+\date{22 майя 2026}
+
+\begin{document}
+
+{\setbeamertemplate{footline}{}
+\begin{frame}
+  \titlepage
+\end{frame}}
+
+\begin{frame}{Введение}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+      \begin{block}{}
+        Физико-математический факультет ОГУ~--- \textbf{один из старейших}
+        в университете, стоявший у истоков его создания.
+      \end{block}
+      \vspace{0.4em}
+      \begin{block}{}
+        Факультет имеет богатую историю
+        подготовки учителей физики,
+        математики и информатики, сочетая
+        фундаментальное образование с
+        актуальными научными
+        исследованиями в области физики,
+        математики и IT-технологий.
+      \end{block}
+    \column{0.4\textwidth}
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{logotype.jpg}\\[0.3em]
+    {\small\textcolor{ogublue}{\textit{Эмблема факультета}}}
+  \end{center}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{История основания}
+  \begin{center}
+  \begin{tikzpicture}[
+    box/.style={draw=ogublue, fill=ogulightblue, rounded corners=5pt,
+                minimum width=2.6cm, minimum height=1.1cm,
+                align=center, line width=1.2pt, font=\small},
+    arrow/.style={->, >=Stealth, ogublue, line width=1.5pt}
+  ]
+    \node[box] (n1) at (-3.6, 0) {\textbf{5.08.1931}\\\footnotesize Основание\\института};
+    \node[box] (n2) at (0,    0) {\textbf{16.10.1931}\\\footnotesize Физ.-технич.\\факультет};
+    \node[box] (n3) at (3.6,  0) {\textbf{1932}\\\footnotesize Физ.-мат.\\факультет};
+    \draw[arrow] (n1)--(n2);
+    \draw[arrow] (n2)--(n3);
+
+    \node[draw=ogugold, fill=ogugold!12, rounded corners=4pt,
+          minimum width=10.0cm, align=center, below=0.65cm of n2,
+          font=\itshape\small, line width=1pt]
+      {<<Один из старейших факультетов ОГУ>>};
+  \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Развитие факультета}
+  \begin{columns}[T]
+    \column{0.47\textwidth}
+      \begin{alertblock}{1950-е годы}
+        Функционирование вечерних отделений; активный рост
+        числа студентов и преподавателей.
+      \end{alertblock}
+      \vspace{0.5em}
+      \begin{block}{Начало 1980-х --- расширение}
+        \begin{itemize}
+          \item Кафедра общей физики
+          \item Кафедра теоретической физики
+          \item Рост научных публикаций
+        \end{itemize}
+      \end{block}
+    \column{0.48\textwidth}
+  \begin{block}{Владимир Федотович Пивень}
+    \begin{columns}[T]
+      \column{0.38\textwidth}
+        \includegraphics[width=\textwidth, height=2.8cm, keepaspectratio]{Владимир.Ф.П.png}
+      \column{0.58\textwidth}
+        д.\,ф.-м.\,н., профессор,\\
+        зав. кафедрой общей физики.\\[0.4em]
+        \begin{itemize}
+          \item Проработал \textbf{более 46~лет}
+          \item Основатель научной школы
+          \item Подготовил десятки учёных
+        \end{itemize}
+    \end{columns}
+  \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Современность}
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+      \begin{block}{Структура (2025)}
+        \textbf{5 кафедр факультета:}
+        \begin{itemize}
+          \item Алгебры и геометрии
+          \item Информатики
+          \item Математического анализа
+          \item Экспер. и теор. физики
+          \item Математики и ПИТ
+        \end{itemize}
+        \medskip
+        \textbf{94} бюдж. места на 2025 год \newline от \textbf{128\,240 руб/год}
+      \end{block}
+    \column{0.48\textwidth}
+      \begin{block}{Востребованные профессии}
+        \begin{itemize}
+          \item Системный аналитик
+          \item Руководитель IT-проектов
+          \item Разработчик приложений
+          \item Инженер прикладной сферы
+        \end{itemize}
+      \end{block}
+      \vspace{0.3em}
+      \begin{alertblock}{Научная конференция}
+        \footnotesize Всерос. конф. <<Современные проблемы
+        физико-математических наук>>\\
+        (ML, анализ данных, методика преподавания)
+      \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Кафедры факультета}
+  \begin{center}
+  \renewcommand{\arraystretch}{1.38}
+  \begin{tabular}{>{\bfseries\color{ogublue}}l l l}
+    \toprule
+    \normalfont\bfseries Кафедра & \bfseries Заведующий & \bfseries Контакты \\
+    \midrule
+    Мат. анализа и методики & Чаплыгина Е.\,В. & matdiff@yandex.ru \\[2pt]
+    Алгебры и мат. методов  & Строев С.\,П.    & 8\,(4862)\,75-24-25 \\[2pt]
+    Экспер. и теор. физики  & Марков О.\,И.    & kafedrafiziki.ogu@mail.ru \\[2pt]
+    Информатики             & Дорофеева В.\,И. & kafedra.informatiki@ogu.ru \\[2pt]
+    Математики и ПИТ        & Авдеев И.\,Ф.    & 8\,(4862)\,43-17-40 \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+  \vspace{0.4em}
+  \begin{center}
+    \textcolor{ogublue}{\textbf{Адрес:}}\;
+    г.\,Орёл, ул.\,Комсомольская, д.\,95 (корпус \textnumero 1)
+  \end{center}
+\end{frame}
+
+\begin{frame}{Заключение}
+  \begin{block}{Итоги}
+    Физико-математический факультет ОГУ за \textbf{более 90~лет} своей истории
+    прошёл путь от небольшого отделения до крупного современного факультета
+    с пятью кафедрами и богатой научной школой.
+  \end{block}
+  \vspace{0.5em}
+  \begin{columns}[T]
+    \column{0.32\textwidth}
+      \begin{alertblock}{\centering Основан}
+        \centering\Large\textbf{1931}
+      \end{alertblock}
+    \column{0.32\textwidth}
+      \begin{alertblock}{\centering Кафедр}
+        \centering\Large\textbf{5}
+      \end{alertblock}
+    \column{0.32\textwidth}
+      \begin{alertblock}{\centering Бюдж. мест}
+        \centering\Large\textbf{94}
+      \end{alertblock}
+  \end{columns}
+  \vspace{0.7em}
+  \begin{center}
+    \textcolor{ogublue}{\large\textbf{Спасибо за внимание!}}
+  \end{center}
+\end{frame}
+
+\end{document}
