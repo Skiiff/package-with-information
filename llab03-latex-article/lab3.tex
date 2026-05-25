@@ -1,0 +1,151 @@
+\documentclass{article}
+\usepackage[top=4cm,bottom=4cm,left=4cm,right=4cm]{geometry}
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{fontenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\begin{document}
+
+\setcounter{page}{107}
+\thispagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{§ 3]}
+\fancyhead[C]{МЕТОД РАЗДЕЛЕНИЯ ПЕРЕМЕННЫХ}
+\fancyhead[R]{107}
+\renewcommand{\headrulewidth}{0pt}
+
+Слагаемое $\alpha u_t$ в правой части уравнения соответствует трению, пропорциональному скорости.
+
+Рассмотрим сначала задачу о распространении периодического граничного режима:
+\begin{equation*}
+u(l,\,t) = A\cos\omega t \quad \text{(или} \quad u(l,\,t) = B\sin\omega t\text{),} \tag{62}
+\end{equation*}
+\begin{equation*}
+u(0,\,t) = 0. \tag{63}
+\end{equation*}
+
+Для дальнейшего нам удобнее записать граничное условие в комплексной форме
+\begin{equation*}
+u(l,\,t) = Ae^{i\omega t}. \tag{64}
+\end{equation*}
+
+Если
+\begin{equation*}
+u(x,\,t) = u^{(1)}(x,\,t) + iu^{(2)}(x,\,t)
+\end{equation*}
+удовлетворяет уравнению (61) с граничными условиями (63) и (64), то $u^{(1)}(x,\,t)$ и $u^{(2)}(x,\,t)$ — его действительная и минимая части — в отдельности удовлетворяют тому же уравнению (в силу его линейности), условию (63) и граничным условиям при $x = l$
+\begin{equation*}
+u^{(1)}(l,\,t) = A\cos\omega t,
+\end{equation*}
+\begin{equation*}
+u^{(2)}(l,\,t) = A\sin\omega t.
+\end{equation*}
+
+Итак, найдем решение задачи
+\begin{equation*}
+\left.
+\begin{array}{l}
+u_{tt} \quad = a^{2}u_{xx} - \alpha u_t, \\
+u(0,\,t) = 0, \\
+u(l,\,t) = Ae^{i\omega t}.
+\end{array}
+\right\} \tag{65}
+\end{equation*}
+
+Полагая
+\begin{equation*}
+u(x,\,t) = X(x)\,e^{i\omega t}
+\end{equation*}
+и подставляя это выражение в уравнение, получим для функции $X(x)$ следующую задачу:
+\begin{equation*}
+X'' + k^{2}X = 0 \qquad \left(k^{2} = \frac{\omega^{2}}{a^{2}} - i\alpha\frac{\omega}{a^{2}}\right), \tag{66}
+\end{equation*}
+\begin{equation*}
+X(0) = 0, \tag{67}
+\end{equation*}
+\begin{equation*}
+X(l) = A. \tag{68}
+\end{equation*}
+
+Из уравнения (66) и граничного условия (67) находим:
+\begin{equation*}
+X(x) = C\sin kx.
+\end{equation*}
+Условие при $x = l$ дает:
+\begin{equation*}
+C = \frac{A}{\sin kl}\,, \tag{69}
+\end{equation*}
+так что
+\begin{equation*}
+X(x) = A\,\frac{\sin kx}{\sin kl} = X_{1}(x) + iX_{2}(x), \tag{70}
+\end{equation*}
+где $X_{1}(x)$ и $X_{2}(x)$ — действительная и минимая части $X(x)$.
+
+\newpage
+
+\setcounter{page}{108}
+\thispagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{108}
+\fancyhead[C]{УРАВНЕНИЯ ГИПЕРБОЛИЧЕСКОГО ТИПА}
+\fancyhead[R]{[ГЛ. II}
+\renewcommand{\headrulewidth}{0pt}
+
+Искомое решение можно представить в виде
+\begin{equation*}
+u(x,\,t) = \left[X_{1}(x) + iX_{2}(x)\right]e^{i\omega t} = u^{(1)}(x,\,t) + iu^{(2)}(x,\,t),
+\end{equation*}
+где
+\begin{equation*}
+u^{(1)}(x,\,t) = X_{1}(x)\cos\omega t - X_{2}(x)\sin\omega t,
+\end{equation*}
+\begin{equation*}
+u^{(2)}(x,\,t) = X_{1}(x)\sin\omega t + X_{2}(x)\cos\omega t.
+\end{equation*}
+
+Переходя к пределу при $\alpha\to 0$, найдем, что
+\begin{equation*}
+\bar{k} = \lim_{\alpha\to 0} k = \frac{\omega}{a} \tag{71}
+\end{equation*}
+и, соответственно,
+\begin{equation*}
+\bar{u}^{(1)}(x,\,t) = \lim_{\alpha\to 0} u^{(1)}(x,\,t) = A\,\frac{\sin\dfrac{\omega}{a}\,x}{\sin\dfrac{\omega}{a}\,l}\cos\omega t, \tag{72}
+\end{equation*}
+
+\begin{equation*}
+\bar{u}^{(2)}(x,\,t) = \lim_{\alpha\to 0} u^{(2)}(x,\,t) = A\,\frac{\sin\dfrac{\omega}{a}\,x}{\sin\dfrac{\omega}{a}\,l}\sin\omega t. \tag{73}
+\end{equation*}
+
+Рассмотрим следующую задачу:
+\begin{equation*}
+\left.
+\begin{array}{ll}
+u_{tt} = a^{2}u_{xx}, & 0 < x < l,\ t > -\infty; \\
+u(0,\,t) = \mu_{1}(t), & t > -\infty; \\
+u(l,\,t) = \mu_{2}(t), &
+\end{array}
+\right\} \tag{I$_0$}
+\end{equation*}
+которую будем называть задачей (I$_0$). Очевидно, что $\bar{u}^{(1)}(x,t)$ и $\bar{u}^{(2)}(x,t)$ являются решениями задачи (I$_0$) при граничных условиях
+\begin{equation*}
+\bar{u}^{(1)}(0,\,t) = 0, \quad \bar{u}^{(1)}(l,\,t) = A\cos\omega t,
+\end{equation*}
+\begin{equation*}
+\bar{u}^{(2)}(0,\,t) = 0, \quad \bar{u}^{(2)}(l,\,t) = A\sin\omega t.
+\end{equation*}
+
+Решение задачи при $\alpha = 0$ существует не всегда. Если частота вынужденных колебаний $\omega$ совпадает с собственной частотой $\omega_{n}$ колебаний струны с закрепленными концами
+\begin{equation*}
+\omega = \omega_{n} = \frac{\pi n}{l}\,a,
+\end{equation*}
+то знаменатель в формулах для $\bar{u}^{(1)}$ и $\bar{u}^{(2)}$ обращается в нуль и решения задачи без начальных условий не существует.
+
+Этот факт имеет простой физический смысл: при $\omega = \omega_{n}$ наступает резонанс, т. е. не существует установившегося режима. Амплитуда, начиная с некоторого момента $t = t_0$, неограниченно нарастает.
+
+При наличии трения ($\alpha \neq 0$) установившийся режим возможен при любом $\omega$, так как $\sin kl \neq 0$ при комплексном $k$.
+
+\end{document}
