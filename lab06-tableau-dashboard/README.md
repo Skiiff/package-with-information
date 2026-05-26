@@ -1,5 +1,9 @@
 # Лабораторная работа №6
 
+## Задание
+
+[![Превью документа](https://github.com/Skiiff/package-with-information/blob/main/screenshots/lab6_zadanie.png)](https://github.com/Skiiff/package-with-information/blob/main/lab06-tableau-dashboard/Laboratornaya_rabota_6_EGE.doc)
+
 ## Тема
 
 Создание дашборда
