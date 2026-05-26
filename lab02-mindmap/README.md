@@ -1,5 +1,9 @@
 # Лабораторная работа №2
 
+## Задание
+
+[![Превью документа](https://github.com/Skiiff/package-with-information/blob/main/screenshots/lab2_zadanie.png)](https://github.com/Skiiff/package-with-information/blob/main/lab02-mindmap/Laboratornaya_rabota_2_Osnovy_inf_tekhnologiy.pdf)
+
 ## Тема
 
 Работа с технологиями описания исследуемой предметной области на 
