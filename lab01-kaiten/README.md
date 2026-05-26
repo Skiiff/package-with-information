@@ -2,7 +2,7 @@
 
 ## Задание
 
-[![Превью документа](https://github.com/Skiiff/package-with-information/blob/main/screenshots/lab1_zadanie.png)]()
+[![Превью документа](https://github.com/Skiiff/package-with-information/blob/main/screenshots/lab1_zadanie.png)](https://github.com/Skiiff/package-with-information/blob/main/lab01-kaiten/Laboratornaya_rabota_1_Osnovy_inf_tekhnologiy.pdf)
 
 ## Тема
 
