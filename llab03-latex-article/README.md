@@ -2,7 +2,7 @@
 
 ## Задание
 
-[![Превью документа](http://github.com/Skiiff/package-with-information/blob/main/screenshots/lab3_zadanie.png)](https://github.com/Skiiff/package-with-information/blob/main/llab03-latex-article/Laboratornaya_rabota_3_Osnovy_inf_tekhnologiy.doc)
+[![Превью документа](https://github.com/Skiiff/package-with-information/blob/main/screenshots/lab3_zadanie.png)](https://github.com/Skiiff/package-with-information/blob/main/llab03-latex-article/Laboratornaya_rabota_3_Osnovy_inf_tekhnologiy.doc)
 
 ## Тема
 
