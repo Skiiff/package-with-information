@@ -2,7 +2,7 @@
 
 ## Задание
 
-[![Превью документа](ссылка_на_картинку.png)](https://github.com)
+[![Превью документа](https://github.com/Skiiff/package-with-information/blob/main/screenshots/lab1_zadanie.png)]()
 
 ## Тема
 
